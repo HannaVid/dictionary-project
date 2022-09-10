@@ -9,8 +9,6 @@ export default function Dictionary() {
 
   function Search(event) {
     event.preventDefault();
-    alert(`Searching ${keyWord}`);
-    // console.log(event.target.value);
 
     // documentation: https://dictionaryapi.dev
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
@@ -18,7 +16,6 @@ export default function Dictionary() {
   }
 
   function handleResponse(response) {
-    console.log(response.data[0]);
     setResults(response.data[0]);
   }
 
