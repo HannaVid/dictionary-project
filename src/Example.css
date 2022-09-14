@@ -1,17 +1,9 @@
 .Example {
   font-style: italic;
   opacity: 0.8;
-  /* padding-left: 30px; */
   font-size: 21px;
 }
 
 .Example li::before {
   content: "";
-  /* width: 10px;
-  height: 10px;
-  border-radius: 50%; */
-  /* width: 2px;
-  background-color: #ef8a84;
-  display: inline-block;
-  margin: 0 10px 0 0; */
 }

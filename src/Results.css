@@ -1,34 +1,33 @@
 .Results h2 {
-  font-weight: 700;
-  /* margin-bottom: 24px; */
-  margin-right: 20px;
   font-size: 44px;
   font-style: italic;
+  font-weight: 700;
+  margin-right: 20px;
 }
 
 .Results .phonetic {
-  display: flex;
-  gap: 20px;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .Results {
   background-color: #fff3eb;
-  padding: 80px;
   margin: 80px 0;
+  padding: 80px;
 }
 
 @media (max-width: 767px) {
   .Results {
-    padding: 20px;
     margin: 20px 0;
+    padding: 20px;
   }
   .Results .phonetic {
     display: block;
   }
   .Results h2 {
-    text-align: center;
     margin: 0 0 20px;
+    text-align: center;
   }
 }

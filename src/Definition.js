@@ -1,6 +1,6 @@
 import React from "react";
-import "./Definition.css";
 import Example from "./Example";
+import "./Definition.css";
 
 export default function Definition(props) {
   if (props.definition) {

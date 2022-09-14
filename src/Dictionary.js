@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
-// import Photos from "./Photos";
 import SearchIcon from "./images/Search.svg";
 
 export default function Dictionary() {
@@ -18,7 +17,6 @@ export default function Dictionary() {
     axios.get(apiUrl).then(handleResponse);
 
     //documentation: https://www.pexels.com/api/documentation/
-
     let pexelsApiKey =
       "563492ad6f91700001000001bc5440db709f491fb84aa5d279e748d5";
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
@@ -27,7 +25,6 @@ export default function Dictionary() {
   }
 
   function handlePexelsResponse(response) {
-    console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -50,7 +47,6 @@ export default function Dictionary() {
         />
       </form>
       <Results results={results} photos={photos} />
-      {/* <Photos photos={photos} /> */}
     </div>
   );
 }

@@ -1,54 +1,36 @@
-/* .Definition ol {
-  padding: 0;
-  margin-left: 20px;
- margin-top: 100px; 
-  text-align: start;
-  list-style-position: inside;
-} */
-
 .Definition li {
-  padding-bottom: 28px;
-  text-align: justify;
-  line-height: 1.5;
   font-size: 24px;
+  line-height: 1.5;
   margin-left: 40px;
+  padding-bottom: 28px;
   position: relative;
+  text-align: justify;
 }
 
 .Definition li::before {
   content: "●";
-  /* width: 10px;
-  height: 10px;
-  border-radius: 50%; */
   color: #ef8a84;
-  /* color: #4d8fc3; */
   display: inline-block;
+  left: -40px;
   margin: 0 10px 0 0;
   position: absolute;
-  left: -40px;
 }
 
 .Definition .definition_end {
-  display: none;
   color: #ef8a84;
+  display: none;
 }
 
 @media (max-width: 767px) {
   .Definition li {
     font-size: 21px;
-    text-align: center;
     margin: 0;
+    text-align: center;
   }
 
   .Definition li::before {
     content: "";
   }
-
-  /* .Definition li::before {
-    content: "***";
-    color: #ef8a84;
-    display: block;
-  } */
 
   .Definition .definition_end {
     display: block;
