@@ -1,0 +1,30 @@
+/* .Synonyms {
+  margin: 15px 0 0;
+}
+
+.Synonyms {
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 50px 20px;
+  border: 2px solid #ef8a84;
+}
+
+@media (min-width: 576px) {
+  .Synonyms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Synonyms {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+.Synonyms {
+  border: 2px dashed #4d8fc3;
+  padding: 20px;
+  margin: 20px 0;
+}

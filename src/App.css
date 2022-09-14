@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000d35;
+}
+
+.App {
+  margin-top: 100px;
+}
+
+.App h1 {
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.App p {
+  font-size: 30px;
+}
+
+.App hr {
+  color: #4d8fc3;
+  border-top: 2px solid;
+  opacity: 0.8;
+}
+
+.App footer {
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin: 50px 0;
+}
+
+.App footer img {
+  max-width: 20px;
+  margin: 7px;
+  transition: all 150ms ease-in-out;
+}
+
+.App footer img:hover {
+  transform: scale(1.3);
+}

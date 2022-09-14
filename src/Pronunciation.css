@@ -1,0 +1,28 @@
+.Pronunciation button {
+  background-color: transparent;
+  border: none;
+}
+
+.Pronunciation {
+  display: inline-flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.Pronunciation .icon * {
+  transition: all 150ms ease-in-out;
+}
+
+.Pronunciation .icon *:hover {
+  color: #4d8fc3;
+  transform: scale(1.2);
+}
+
+.Pronunciation h4 {
+  font-size: 16px;
+  opacity: 0.8;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
