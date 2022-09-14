@@ -27,3 +27,30 @@
   position: absolute;
   left: -40px;
 }
+
+.Definition .definition_end {
+  display: none;
+  color: #ef8a84;
+}
+
+@media (max-width: 767px) {
+  .Definition li {
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Definition li::before {
+    content: "";
+  }
+
+  /* .Definition li::before {
+    content: "***";
+    color: #ef8a84;
+    display: block;
+  } */
+
+  .Definition .definition_end {
+    display: block;
+  }
+}

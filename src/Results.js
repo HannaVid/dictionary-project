@@ -9,18 +9,17 @@ export default function Results(props) {
     console.log(props.results);
     return (
       <div className="Results">
-        <section>
-          <div className="phonetic">
-            <h2>{props.results.word}</h2>
-            {props.results.phonetics.map(function (phonetic, index) {
-              return (
-                <div key={index}>
-                  <Phonetic phonetic={phonetic} />
-                </div>
-              );
-            })}
-          </div>
-        </section>
+        <div className="phonetic">
+          <h2>{props.results.word}</h2>
+          {props.results.phonetics.map(function (phonetic, index) {
+            return (
+              <div key={index}>
+                <Phonetic phonetic={phonetic} />
+              </div>
+            );
+          })}
+        </div>
+
         <Photos photos={props.photos} />
 
         {props.results.meanings.map(function (meaning, index) {

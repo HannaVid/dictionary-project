@@ -18,3 +18,17 @@
   padding: 80px;
   margin: 80px 0;
 }
+
+@media (max-width: 767px) {
+  .Results {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .Results .phonetic {
+    display: block;
+  }
+  .Results h2 {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+}

@@ -1,3 +1,6 @@
-/* .Phonetic {
-  display: inline;
-} */
+@media (max-width: 767px) {
+  .Phonetic {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -9,11 +9,7 @@ export default function Pronunciation(props) {
     new Audio(props.url).play();
   }
 
-  // props.url.trim() !== ""
-
-  // if (props.url.toString() !== 0) {
   if ((props.url !== "") & (props.transcription !== "")) {
-    // if (props.url.toString() != null && typeof str !== "undefined") {
     return (
       <div className="Pronunciation">
         <Language language={props.url} />

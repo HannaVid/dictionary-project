@@ -39,3 +39,9 @@
   text-align: center;
   margin: 50px auto 50px;
 }
+
+@media (max-width: 767px) {
+  .Dictionary input {
+    width: 100%;
+  }
+}

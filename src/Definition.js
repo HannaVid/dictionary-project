@@ -13,6 +13,7 @@ export default function Definition(props) {
               <li key={index}>
                 {definition.definition}
                 <Example example={definition.example} />
+                <div className="definition_end">***</div>
               </li>
             );
           })}
