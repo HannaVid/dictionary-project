@@ -16,12 +16,10 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
 
-    //documentation: https://www.pexels.com/api/documentation/
-    let pexelsApiKey =
-      "563492ad6f91700001000001bc5440db709f491fb84aa5d279e748d5";
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyWord}&per_page=8`;
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    // use your own proxy server to make the Pexels API request
+    let proxyUrl = "http://localhost:5000";
+    let pexelsApiUrl = `${proxyUrl}/pexels?query=${keyWord}&per_page=8`;
+    axios.get(pexelsApiUrl).then(handlePexelsResponse);
   }
 
   function handlePexelsResponse(response) {
