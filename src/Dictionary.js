@@ -16,9 +16,9 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
 
-    // use your own proxy server to make the Pexels API request
-    let proxyUrl = "http://localhost:5000";
-    let pexelsApiUrl = `${proxyUrl}/pexels?query=${keyWord}&per_page=8`;
+    // use the Netlify function as a proxy to make the Pexels API request
+    let netlifyFunctionUrl = "/.netlify/functions/pexels";
+    let pexelsApiUrl = `${netlifyFunctionUrl}?query=${keyWord}&per_page=8`;
     axios.get(pexelsApiUrl).then(handlePexelsResponse);
   }
 
