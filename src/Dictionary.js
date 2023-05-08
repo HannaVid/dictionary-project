@@ -16,10 +16,12 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
 
-    // use the Netlify function as a proxy to make the Pexels API request
-    let netlifyFunctionUrl = "/.netlify/functions/pexels";
-    let pexelsApiUrl = `${netlifyFunctionUrl}?query=${keyWord}&per_page=8`;
-    axios.get(pexelsApiUrl).then(handlePexelsResponse);
+    //documentation: https://www.pexels.com/api/documentation/
+    let pexelsApiKey =
+      "563492ad6f91700001000001bc5440db709f491fb84aa5d279e748d5";
+    let headers = { Authorization: `${pexelsApiKey}` };
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyWord}&per_page=8`;
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   function handlePexelsResponse(response) {
